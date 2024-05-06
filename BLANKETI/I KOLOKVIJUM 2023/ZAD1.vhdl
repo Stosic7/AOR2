@@ -68,7 +68,7 @@ begin
     proces : process(clk) is
     begin
         if (clk = '1') then
-            q <= not q;
+            q <= not clk;
             
             if (rst = '1') then
                 d_in <= "0000";
